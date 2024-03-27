@@ -33,7 +33,9 @@ size_t bin_tree_bal_ht(const binary_tree_t *tree)
 
 int binary_tree_balance(const binary_tree_t *tree)
 {
-	int total = rt = lf = 0;
+	int total, rt, lf;
+
+	total = rt = lf = 0;
 
 	if (tree)
 	{
