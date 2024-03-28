@@ -26,10 +26,10 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 }
 
 /**
- *exponent - returns exponent of a
- *@a: value to exponentiate
- *@b: power to raise x to
- *Return: a to power of b, -1 if y is negative
+ * exponent - returns exponent of a
+ * @a: value to exponentiate
+ * @b: power to raise x to
+ * Return: a to power of b, -1 if y is negative
  */
 
 int exponent(int a, int b)
@@ -68,7 +68,7 @@ size_t binary_tree_height(const binary_tree_t *tree)
 	if (!tree)
 		return (0);
 
-	right_ht = tree->left ? 1 + binary_tree_height(tree->left) : 0;
-	left_ht = tree->right ? 1 + binary_tree_height(tree->right) : 0;
+	right_ht = tree->right ? 1 + binary_tree_height(tree->right) : 0;
+	left_ht = tree->left ? 1 + binary_tree_height(tree->left) : 0;
 	return (left_ht > right_ht ? left_ht : right_ht);
 }
